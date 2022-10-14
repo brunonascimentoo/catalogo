@@ -1,12 +1,7 @@
 import './assets/styles/custom.scss';
 import './global.css';
-import { Navbar } from './components/Navbar/Navbar';
+import { Home } from './pages/Home/Home';
 
 export function App() {
-  return (
-    <div>
-      <Navbar />
-      <h1>Olá Mundo</h1>
-    </div>
-  );
+  return <Home />;
 }
