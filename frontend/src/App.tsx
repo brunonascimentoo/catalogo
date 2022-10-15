@@ -1,7 +1,7 @@
 import './assets/styles/custom.scss';
 import './global.css';
-import { Home } from './pages/Home/Home';
+import { Catalogo } from './pages/Catalogo/Catalogo';
 
 export function App() {
-  return <Home />;
+  return <Catalogo />;
 }
