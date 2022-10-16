@@ -1,7 +1,7 @@
 import './assets/styles/custom.scss';
 import './global.css';
-import { Catalogo } from './pages/Catalogo/Catalogo';
+import { Routes } from './Routes';
 
 export function App() {
-  return <Catalogo />;
+  return <Routes />;
 }
