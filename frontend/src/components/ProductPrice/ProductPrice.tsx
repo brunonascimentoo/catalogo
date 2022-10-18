@@ -1,3 +1,4 @@
+import { formatPrice } from '../../util/formatters';
 import './styles.css';
 
 interface ProductPriceProps {
@@ -8,7 +9,7 @@ export function ProductPrice({ price }: ProductPriceProps) {
   return (
     <div className="product-price-container">
       <span>R$</span>
-      <h3>{price}</h3>
+      <h3>{formatPrice(price)}</h3>
     </div>
   );
 }
