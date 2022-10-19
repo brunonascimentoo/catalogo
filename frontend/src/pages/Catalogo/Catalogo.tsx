@@ -2,6 +2,7 @@ import { Product } from '../../types/product';
 import { ProductCard } from '../../components/ProductCard/ProductCard';
 import { Link } from 'react-router-dom';
 import './styles.css';
+import { Pagination } from '../../components/Pagination/Pagination';
 
 export function Catalogo() {
   const product: Product = {
@@ -71,6 +72,10 @@ export function Catalogo() {
             <ProductCard product={product} />
           </Link>
         </div>
+      </div>
+
+      <div className="row">
+        <Pagination />
       </div>
     </div>
   );
