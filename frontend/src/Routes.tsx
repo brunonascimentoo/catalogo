@@ -1,5 +1,5 @@
 import { Navbar } from './components/Navbar/Navbar';
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import { BrowserRouter, Switch, Route, Redirect } from 'react-router-dom';
 import { Home } from './pages/Home/Home';
 import { Catalogo } from './pages/Catalogo/Catalogo';
 import { Admin } from './pages/Admin/Admin';
@@ -19,6 +19,7 @@ export function Routes() {
         <Route path="/products/:productId">
           <ProductDetails />
         </Route>
+        <Redirect from="/admin" to="admin/products" exact />
         <Route path="/admin">
           <Admin />
         </Route>
