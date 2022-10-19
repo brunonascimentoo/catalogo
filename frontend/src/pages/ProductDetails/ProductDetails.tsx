@@ -1,15 +1,18 @@
 import './styles.css';
 import arrowImg from '../../assets/images/arrow.svg';
 import { ProductPrice } from '../../components/ProductPrice/ProductPrice';
+import { Link } from 'react-router-dom';
 
 export function ProductDetails() {
   return (
     <div className="product-details-container">
       <div className="product-details-card base-card">
-        <div className="goback-container">
-          <img src={arrowImg} />
-          <h2>Voltar</h2>
-        </div>
+        <Link to="/products">
+          <div className="goback-container">
+            <img src={arrowImg} />
+            <h2>Voltar</h2>
+          </div>
+        </Link>
         <div className="row">
           <div className="col-xl-6">
             <div className="img-container">
